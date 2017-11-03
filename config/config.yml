@@ -1,0 +1,11 @@
+development:
+  metadata_adapter: 'solr'
+  storage_adapter: 'disk'
+
+test:
+  metadata_adapter: 'solr'
+  storage_adapter: 'disk'
+
+production:
+  metadata_adapter: 'solr'
+  storage_adapter: 'disk'
