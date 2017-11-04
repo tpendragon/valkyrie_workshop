@@ -1,4 +1,20 @@
 class PostcardsController < ApplicationController
+
+  def new
+    @change_set = PostcardChangeSet.new(Postcard.new)
+    @change_set.prepopulate!
+  end
+
+  def create
+    @change_set = PostcardChangeSet.new(Postcard.new)
+    if @change_set.validate(params[:postcard])
+      metadata_adapter.persister.save(resource: @change_set.sync)
+      redirect_to @change_set.resource
+    else
+      render :edit
+    end
+  end
+
   def show
     redirect_to solr_document_path(id: params[:id])
   end

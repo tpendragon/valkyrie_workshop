@@ -1,5 +1,2 @@
-<h1><%= @change_set.title.to_sentence %></h1>
-<%= simple_form_for @change_set do |f| %>
-  <%= render_edit_field_partial(:title, f: f) %>
-  <%= f.button :submit %>
-<% end %>
+<h1>Editing <%= @change_set.title.to_sentence %></h1>
+<%= render "form" %>
