@@ -1,6 +1,7 @@
 class PostcardChangeSet < Valkyrie::ChangeSet
   validate :title_not_blank
-  self.fields = [:title]
+  property :title, multiple: true, required: true
+  property :author, multiple: false
 
   def title_not_blank
     return if title.present? && Array.wrap(title).select(&:present?).present?

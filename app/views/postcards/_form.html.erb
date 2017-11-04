@@ -1,4 +1,5 @@
 <%= simple_form_for @change_set do |f| %>
   <%= render_edit_field_partial(:title, f: f) %>
+  <%= render_edit_field_partial(:author, f: f) %>
   <%= f.button :submit %>
 <% end %>
