@@ -16,5 +16,6 @@
 // Required by Blacklight
 //= require jquery
 //= require blacklight/blacklight
+//= require hydra-editor/hydra-editor
 
 //= require_tree .

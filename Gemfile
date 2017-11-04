@@ -61,3 +61,7 @@ end
 
 gem 'rsolr', '>= 1.0'
 gem 'jquery-rails'
+gem 'simple_form'
+gem 'hydra-editor'
+gem 'pry-rails'
+gem 'pry-byebug'

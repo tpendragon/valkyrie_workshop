@@ -21,4 +21,5 @@ Rails.application.routes.draw do
       delete 'clear'
     end
   end
+  resources :postcards
 end

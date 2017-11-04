@@ -28,5 +28,6 @@ class CatalogController < ApplicationController
     config.add_index_field 'title_ssim', label: 'Title'
 
     config.add_search_field 'all_fields', label: 'All Fields'
+    config.add_show_tools_partial(:admin_controls, partial: 'admin_controls')
   end
 end
