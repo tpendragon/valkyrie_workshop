@@ -1,7 +1,7 @@
 # Place any default configuration for solr_wrapper here
 # port: 8983
-download_dir: ''
-solr_zip_path: 'solr-7.1.0.zip'
+download_dir: '/home/vagrant/'
+solr_zip_path: '/home/vagrant/solr-7.1.0.zip'
 instance_dir: 'tmp/solr'
 collection:
   dir: solr/conf/

@@ -13,6 +13,7 @@ Vagrant.configure("2") do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
   config.vm.box = "tpendragon/valkyrie_workshop"
+  config.vm.box_version = "2.0"
   config.ssh.insert_key = false
 
   # Disable automatic box update checking. If you disable this, then
