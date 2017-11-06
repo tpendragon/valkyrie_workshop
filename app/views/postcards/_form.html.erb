@@ -1,5 +1,6 @@
 <%= simple_form_for @change_set do |f| %>
   <%= render_edit_field_partial(:title, f: f) %>
   <%= render_edit_field_partial(:author, f: f) %>
+  <%= f.input :related_objects, collection: @others, value_method: :id, label_method: :title, required: f.object.required?(:related_objects) %>
   <%= f.button :submit %>
 <% end %>

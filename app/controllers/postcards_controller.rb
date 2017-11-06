@@ -2,6 +2,7 @@ class PostcardsController < ApplicationController
 
   def new
     @change_set = PostcardChangeSet.new(Postcard.new)
+    @others = metadata_adapter.query_service.find_all.to_a
     @change_set.prepopulate!
   end
 
@@ -21,6 +22,7 @@ class PostcardsController < ApplicationController
 
   def edit
     @change_set = PostcardChangeSet.new(find_resource(params[:id]))
+    @others = metadata_adapter.query_service.find_all.to_a
     @change_set.prepopulate!
   end
 
