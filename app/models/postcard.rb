@@ -6,4 +6,5 @@ class Postcard < Valkyrie::Resource
   ## Member IDs is a special property. It's ordered, and has special queries.
   ## The name is important.
   attribute :member_ids, Valkyrie::Types::Array
+  attribute :related_objects, Valkyrie::Types::Set
 end
